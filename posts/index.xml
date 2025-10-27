@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 0xandrea</title>
-    <link>http://example.org/posts/</link>
+    <link>https://0xandrea7.github.io/posts/</link>
     <description>Recent content in Posts on 0xandrea</description>
     <generator>Hugo</generator>
     <language>it-it</language>
     <lastBuildDate>Mon, 27 Oct 2025 10:00:00 +0000</lastBuildDate>
-    <atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://0xandrea7.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>./Prime-Lezioni</title>
-      <link>http://example.org/posts/prime_lezioni/</link>
+      <link>https://0xandrea7.github.io/posts/prime_lezioni/</link>
       <pubDate>Mon, 27 Oct 2025 10:00:00 +0000</pubDate>
-      <guid>http://example.org/posts/prime_lezioni/</guid>
+      <guid>https://0xandrea7.github.io/posts/prime_lezioni/</guid>
       <description>&lt;p&gt;Ho iniziato il mio primo anno di universita&amp;rsquo; cira un mese fa e le materie che affrontero&amp;rsquo; nel primo semestre sono Analisi 1, Geometria e algebra Lineare ed infine Fondamenti di informatica.&#xA;In questo primo post cerchero&amp;rsquo; di riassumere le prime lezioni di informatica, la materia che mi piace di piu&amp;rsquo;. Abbiamo iniziato a programmare in c. Questo blog sara&amp;rsquo; un modo per ripassare e consolidare i concetti visti a lezione scrivendo piccoli post, ma in futuro ho intenzione di scrivere anche riguardo ad altri progetti.&lt;/p&gt;</description>
     </item>
   </channel>
