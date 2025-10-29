@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="it-it">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>./Combinatoria | 0xandrea</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+  <body>
+    <header class="site-header">
+  <div class="container header-flex">
+    <h1 class="site-title"><a href="/">0xandrea</a></h1>
+
+	<nav class="site-nav">
+	  <a href="/whoami/">whoami</a>
+	  <a href="/posts/">blog</a>
+	  <a href="/">home</a>
+	</nav>
+
+     
+</header>
+
+
+    <main class="site-main">
+      <div class="container">
+        
+  <article class="post">
+    <h1 class="post-title">./Combinatoria</h1>
+    <div class="post-content">
+      <p>In questo primo mese di universita&rsquo;, dopo aver introdotto gli insiemi e le loro principali proprieta&rsquo; e operazioni, siamo passati alle applicazioni/funzioni, per poi parlare delle relazioni, delle classi di equivalenza e di combinatoria.
+Tra meno di un mese avro&rsquo; il mio primo esonero di geometria e algebra lineare ed usero&rsquo; questo post per riprendere e ripassare i concetti di combinatoria.</p>
+<p>La combinatoria cerca di rispondere a domande del tipo: &ldquo;In quanti modi diversi posso disporre n oggetti?&rdquo;. Si basa su due regole fondamentali che sono: La regola della somma e del prodotto.</p>
+<p>La regola della somma:</p>
+<blockquote>
+<p>Siano A1 e A2 due insiemi disgiunti ( A1 ∩ A2 = Ø, la loro intersenzione e&rsquo; uguale ad un insieme vuoto), con |A1|=n1 |A2|=n2 (le loro rispettive cardinalita&rsquo; sono n1 e n2) allora | A1 U A2 | (la cardinalita&rsquo; dell&rsquo;unione dei due insiemi) sara&rsquo; uguale alla somma delle loro cardinalita&rsquo; ossia n1 + n2.</p>
+</blockquote>
+<p>La regola del prodotto:</p>
+<blockquote>
+<p>Siano A1 e A2 due insiemi con la cardinalita&rsquo; rispettivamente uguale a n1 e n2 allora la cardinalita&rsquo; di A1 x A2 sara&rsquo; uguale a n1 x n2.</p>
+</blockquote>
+<p>Fatta questa premessa sulle regole principali della combinatoria passiamo alle &ldquo;disposizioni&rdquo; e alle &ldquo;combinazioni&rdquo;.
+La disposizione e&rsquo; una scelta di k oggetti da un insieme di n oggetti dove l&rsquo;ordine e&rsquo; importante.
+La combinazione invece e&rsquo; una scelta di k oggetti da un insieme di n oggetti dove l&rsquo;ordine non e&rsquo; importante.</p>
+<p>Vediamo le combinazioni e disposizioni semplici (senza ripetizione).</p>
+<blockquote>
+<p>D (n,k) = n! / (n-k)!</p>
+</blockquote>
+<blockquote>
+<p>C ( n ) = n! / (k! (n-k)! ) &mdash;&gt; detto anche coefficiente binomiale</p>
+</blockquote>
+<blockquote>
+<pre><code>  ( k )
+</code></pre>
+</blockquote>
+<p>Disposizioni e combinazioni con ripetizione.</p>
+<blockquote>
+<p>D (n,k) = n^k</p>
+</blockquote>
+<blockquote>
+<p>C ( n + k -1 ) = (k + n - 1)! / ((n - 1)! k!)</p>
+</blockquote>
+<blockquote>
+<pre><code>  ( n - 1  )
+</code></pre>
+</blockquote>
+<p>Infine abbiamo il principio di inclusione esclusione.</p>
+<blockquote>
+<p>Dati due insiemi A1 e A2 e la loro intersezione e&rsquo; diversa da un insieme vuoto (hanno degli elementi in comune) allora la cardinalita&rsquo; degli insiemi sara&rsquo; uguale alla somma delle cardinalita&rsquo; di A1 e A2 meno la cardinalita&rsquo; dell&rsquo;intersezione tra A1 e A2.</p>
+</blockquote>
+<blockquote>
+<p>Se A1 ∩ A2 ≠ Ø &mdash;&gt; | A1 U A2 | = | A1 | + | A2 | - | A1 ∩ A2 |.</p>
+</blockquote>
+<p>Con tre insiemi la formula si complica.</p>
+<blockquote>
+<p>Se A1 ∩ A2 ∩ A3 ≠ Ø &mdash;&gt; | A1 U A2 U A3| = | A1 | + | A2 | + | A3 | - | A1 ∩ A2 | - | A1 ∩ A3 | - | A2 ∩ A3 | + | A1 ∩ A2 ∩ A3 |.</p>
+</blockquote>
+<p>0xandrea, see you in the next post.</p>
+
+    </div>
+  </article>
+
+      </div>
+    </main>
+    <footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 0xandrea</p>
+  </div>
+</footer>
+
+
+  </body>
+</html>
+
