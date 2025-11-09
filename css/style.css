@@ -176,3 +176,19 @@ a{
   .post-title{ font-size: 1.1rem; }
   .site-nav{ gap: 0.5rem; }
 }
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem; /* spazio extra sotto il link */
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .read-more {
+    margin-bottom: 1.5rem;
+  }
+}
+
