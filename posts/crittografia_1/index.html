@@ -30,49 +30,40 @@
     <h1 class="post-title">./Crittografia_1</h1>
     <div class="post-content">
       <p>Questa rubrica sulla crittografia vuole essere un diario che raccoglie le tappe principali del mio percorso nello studio della crittografia, un&rsquo;agenda utile per chiunque voglia iniziare a studiare da zero questa materia.</p>
-<p>La storia della crittografia puo&rsquo; essere vista come una continua lotta tra crittografi e decrittografi. Nel corso della storia la crittografia e&rsquo; stata parte essenziale della vita di corte e di governi che la utilizzavano per proteggere le loro comunicazioni. La crittografia, ieri come oggi, e&rsquo; un elemento essenziale nelle conversazioni private, sia di singoli cittadini che di politici ma anche di istituzioni e aziende.</p>
-<p>Ad oggi, la crittografia viene adottata come standard nei protocolli che noi usiamo quotidianamente, basti pensare alla comunicazione online tra due computer. Un tempo pero&rsquo; non era cosi&rsquo;, infatti re e governi dovevano usare la crittografia per proteggere le loro comunicazioni da lettori indesiderati.</p>
+<p>La storia della crittografia puo&rsquo; essere vista come una continua lotta tra crittografi e decrittografi. Nel corso della storia la crittografia e&rsquo; stata parte essenziale della vita di corte, ma anche di governi che la utilizzano per proteggere le loro comunicazioni ancora oggi. La crittografia e&rsquo; un elemento essenziale nelle conversazioni private, sia di singoli cittadini che di politici, ma anche di istituzioni e aziende.</p>
+<p>Ad oggi, la crittografia viene adottata come standard nei protocolli che noi usiamo quotidianamente, basti pensare alla comunicazione online tra due computer. Un tempo pero&rsquo; non era cosi&rsquo;, infatti re e governi dovevano usarla per proteggere le loro comunicazioni da lettori indesiderati.</p>
 <p>Il primo esempio di crittografia che vedremo e&rsquo; il cifrario di Cesare.
 E&rsquo; un tipo di crittografia simmetrica, a sostituzione monoalfabetica. Ad ogni lettera del messaggio in chiaro ne corrisponde un&rsquo;altra che si trova un certo numero di posizioni prima o dopo nell&rsquo;alfabeto.
-Ad esempio la parola &lsquo;ciao&rsquo; traslata secondo il numero +1 diventa &ldquo;djbp&rdquo;. Ogni lettera del messaggio viene sostituita con la successiva.</p>
+Ad esempio la parola &lsquo;ciao&rsquo; traslata secondo la chiave +1 diventa &ldquo;djbp&rdquo;. Ogni lettera del messaggio viene sostituita con la successiva.</p>
 <p>Semplice implementazione in c del cifrario di Cesare.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string.h&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">void</span>){
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">char</span> messaggio[] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ciao cesare&#34;</span>;
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> chiave <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> size <span style="color:#f92672">=</span> <span style="color:#a6e22e">strlen</span>(messaggio); 
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;messaggio in chiaro</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> size; i<span style="color:#f92672">++</span>){
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%c&#34;</span>,messaggio[i]);
-</span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;messaggio cifrato</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> size; i<span style="color:#f92672">++</span>){
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> (messaggio[i] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39; &#39;</span>){
-</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%c&#34;</span>,messaggio[i]);
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">continue</span>;
-</span></span><span style="display:flex;"><span>		}
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> (messaggio[i] <span style="color:#f92672">+</span> chiave <span style="color:#f92672">&lt;</span> <span style="color:#e6db74">&#39;a&#39;</span>){
-</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%c&#34;</span>,messaggio[i]<span style="color:#f92672">+</span>chiave<span style="color:#f92672">-</span><span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#39;z&#39;</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>);
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">continue</span>;
-</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">cifra_cesare</span>(<span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>str, <span style="color:#66d9ef">int</span> chiave) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> k <span style="color:#f92672">=</span> chiave <span style="color:#f92672">%</span> <span style="color:#ae81ff">26</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (k <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>) k <span style="color:#f92672">+=</span> <span style="color:#ae81ff">26</span>;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> (messaggio[i] <span style="color:#f92672">+</span> chiave <span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#39;z&#39;</span>){
-</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%c&#34;</span>,messaggio[i]<span style="color:#f92672">+</span>chiave<span style="color:#f92672">-</span><span style="color:#e6db74">&#39;z&#39;</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>);
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">continue</span>;
-</span></span><span style="display:flex;"><span>		}
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%c&#34;</span>,messaggio[i]<span style="color:#f92672">+</span>chiave);
-</span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>} 
-</span></span></code></pre></div><p>Questa riproduzione del cifrario di Cesare ha come chiave di cifratura 20, questo significa che ogni lettera viene sostituita con quella 20 posizioni in avanti nell&rsquo;alfabeto. Il codice supporta come chiave anche un numero negativo che consente di scorrere all&rsquo;indietro nell&rsquo;alfabeto.</p>
-<p>Nel codice vengono definite una stringa char che contiene il messaggio e un int chiave che contiene la chiave di cifratura. Viene inserita la grandezza del messaggio in un int chiamato size che sara&rsquo; utile per capire quante volte bisogna iterare il ciclo for. Nel ciclo for il carattere spazio viene stampato, mentre vengono implementati due if diversi per gestire lo spostamento in avanti e indietro dell&rsquo;alfabeto. Il primo if stampa il messaggio cifrato piu&rsquo; la chiave, ma aggiungendo il numero 122, corrispondente alla carattere ascii &lsquo;z&rsquo; e sottrae 97, carattere &lsquo;a&rsquo;, poi somma 1. Il secondo if esegue le stesse operazioni ma per la cifratura in avanti nell&rsquo;alfabeto.</p>
-<p>Ogni lettera corrisponde ad un numero della ascii table e per conferire circolarita&rsquo; al cifrario devo calcolare innanzitutto il messaggio piu&rsquo; la chiave e poi se minore di 97, &lsquo;a&rsquo;, sottraggo quest&rsquo;ultima cosi&rsquo; da ottenere un numero negativo che mi indica il numero di posizioni da percorrere all&rsquo;indietro dalla fine dell&rsquo;alfabeto. Per fare questo ultimo passaggio aggiugno 122, &lsquo;z&rsquo; e 1.
-Procedimento ripetuto ma con qualche cambiamento anche per il secondo if.</p>
-
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; str[i] <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;\0&#39;</span>; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (str[i] <span style="color:#f92672">&gt;=</span> <span style="color:#e6db74">&#39;a&#39;</span> <span style="color:#f92672">&amp;&amp;</span> str[i] <span style="color:#f92672">&lt;=</span> <span style="color:#e6db74">&#39;z&#39;</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> offset <span style="color:#f92672">=</span> str[i] <span style="color:#f92672">-</span> <span style="color:#e6db74">&#39;a&#39;</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> cifrato <span style="color:#f92672">=</span> (offset <span style="color:#f92672">+</span> k) <span style="color:#f92672">%</span> <span style="color:#ae81ff">26</span>;
+</span></span><span style="display:flex;"><span>            str[i] <span style="color:#f92672">=</span> (<span style="color:#66d9ef">char</span>)(cifrato <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;a&#39;</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">void</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> messaggio[] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ciao cesare&#34;</span>; 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> chiave <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Messaggio in chiaro: %s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, messaggio);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cifra_cesare</span>(messaggio, chiave);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Messaggio cifrato:   %s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, messaggio);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span> 
+</span></span></code></pre></div>
     </div>
   </article>
 
