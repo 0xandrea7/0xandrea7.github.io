@@ -2,31 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>0xandrea</title>
-    <link>http://localhost:1313/</link>
+    <link>https://0xandrea7.github.io/</link>
     <description>Recent content on 0xandrea</description>
     <generator>Hugo</generator>
     <language>it-it</language>
-    <lastBuildDate>Thu, 30 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>./Crittografia_1</title>
-      <link>http://localhost:1313/posts/crittografia_1/</link>
-      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/crittografia_1/</guid>
-      <description>&lt;p&gt;Questa rubrica sulla crittografia vuole essere un diario che raccoglie le tappe principali del mio percorso nello studio della crittografia, un&amp;rsquo;agenda utile per chiunque voglia iniziare a studiare da zero questa materia.&lt;/p&gt;&#xA;&lt;p&gt;La storia della crittografia puo&amp;rsquo; essere vista come una continua lotta tra crittografi e decrittografi. Nel corso della storia la crittografia e&amp;rsquo; stata parte essenziale della vita di corte, ma anche di governi che la utilizzano per proteggere le loro comunicazioni ancora oggi. La crittografia e&amp;rsquo; un elemento essenziale nelle conversazioni private, sia di singoli cittadini che di politici, ma anche di istituzioni e aziende.&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Mon, 27 Oct 2025 10:00:00 +0000</lastBuildDate>
+    <atom:link href="https://0xandrea7.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>./Prime-Lezioni</title>
-      <link>http://localhost:1313/posts/prime_lezioni/</link>
+      <link>https://0xandrea7.github.io/posts/prime_lezioni/</link>
       <pubDate>Mon, 27 Oct 2025 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/prime_lezioni/</guid>
+      <guid>https://0xandrea7.github.io/posts/prime_lezioni/</guid>
       <description>&lt;p&gt;Ho iniziato il mio primo anno di universita&amp;rsquo; cira un mese fa e le materie che affrontero&amp;rsquo; nel primo semestre sono Analisi 1, Geometria e algebra Lineare ed infine Fondamenti di informatica.&#xA;In questo primo post cerchero&amp;rsquo; di riassumere le prime lezioni di informatica, la materia che mi piace di piu&amp;rsquo;. Siamo partiti da zero parlando di cosa e&amp;rsquo; un calcolatore e dei suo compontenti. Abbiamo definito cosa e&amp;rsquo; l&amp;rsquo;informatica e parlato di procedure e algoritmi iniziando a programmare in c. Questo blog sara&amp;rsquo; un modo per ripassare e consolidare i concetti visti a lezione scrivendo piccoli post, ma in futuro ho intenzione di scrivere anche riguardo ad altri progetti.&lt;/p&gt;</description>
     </item>
     <item>
       <title>./whoami</title>
-      <link>http://localhost:1313/whoami/</link>
+      <link>https://0xandrea7.github.io/whoami/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/whoami/</guid>
+      <guid>https://0xandrea7.github.io/whoami/</guid>
       <description>&lt;p&gt;Hello, friend.&#xA;Sono 0xandrea, uno studente al primo anno di ingegneria informatica che ama programmare e capire il funzionamento della tecnologia che lo circonda. Uso arch linux, attualmente con sway, e per scrivere codice uso vim vanilla o quasi.&lt;/p&gt;&#xA;&lt;p&gt;I miei campi di interesse dell&amp;rsquo;informatica sono le reti neurali, la crittografia e la programmazione a basso livello. Attualmente sto studiando il C, in passato ho imparato qualcosa anche in python, ma tra i due senza ombra di dubbio preferisco il C. Quest&amp;rsquo;ultimo infatti, permette al programmatore di essere piu&amp;rsquo; a contatto con la macchina, essendo un linguaggio a basso livello e di conseguenza capire realmente cio&amp;rsquo; che si sta scrivendo.&lt;/p&gt;</description>
     </item>
   </channel>
